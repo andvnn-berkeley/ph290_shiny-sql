@@ -8,9 +8,6 @@ pacman::p_load(shiny, bigrquery, DBI, RSQLite, tidyverse, plotly, lubridate, hrb
 # connect to MIMIC BigQuery database
 db <- dbConnect(
   bigrquery::bigquery(),
-  project = "mimic-3-ph-290",
-  dataset = "mimic3_mod",
-  billing = "mimic-3-ph-290"
 )
 
 
